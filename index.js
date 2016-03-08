@@ -7,4 +7,5 @@ exports.indexBy = require('./indexBy.js');
 exports.range = require('./range.js');
 exports.sortBy = require('./sortBy.js');
 exports.times = require('./times.js');
+exports.values = require('./values.js');
 exports.without = require('./without.js');

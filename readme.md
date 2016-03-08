@@ -180,3 +180,15 @@ Invokes the given iteratee function n times. Each invocation of iteratee is call
 times(3, function(n){ return "item: " + n; });
 => ['item: 0', 'item: 1', 'item: 2']
 ```
+
+## values (80 bytes)
+
+```js
+var values = require('lowscore/values');
+var t = values(n, iteratee);
+```
+
+Return all of the values of the object's own properties.
+
+_.values({one: 1, two: 2, three: 3});
+=> [1, 2, 3]
