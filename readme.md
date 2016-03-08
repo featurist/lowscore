@@ -27,8 +27,10 @@ var found = find(list, predicate);
 
 Looks through each value in the list, returning the first one that passes a truth test (predicate), or undefined if no value passes the test. The function returns as soon as it finds an acceptable element, and doesn't traverse the entire list.
 
-var even = _.find([1, 2, 3, 4, 5, 6], function(num){ return num % 2 == 0; });
+```js
+var even = find([1, 2, 3, 4, 5, 6], function(num){ return num % 2 == 0; });
 => 2
+```
 
 ## sortBy (323 bytes)
 
@@ -92,10 +94,10 @@ var r = flatten(array, [shallow]);
 Flattens a nested array (the nesting can be to any depth). If you pass shallow, the array will only be flattened a single level.
 
 ```js
-_.flatten([1, [2], [3, [[4]]]]);
+flatten([1, [2], [3, [[4]]]]);
 => [1, 2, 3, 4];
 
-_.flatten([1, [2], [3, [[4]]]], true);
+flatten([1, [2], [3, [[4]]]], true);
 => [1, 2, 3, [[4]]];
 ```
 
@@ -108,8 +110,10 @@ var a = compact(array);
 
 Returns a copy of the array with all falsy values removed. In JavaScript, false, null, 0, "", undefined and NaN are all falsy.
 
-_.compact([0, 1, false, 2, '', 3]);
+```js
+compact([0, 1, false, 2, '', 3]);
 => [1, 2, 3]
+```
 
 ## without (135 bytes)
 
@@ -120,8 +124,10 @@ var a = without(array, *values);
 
 Returns a copy of the array with all instances of the values removed.
 
-_.without([1, 2, 1, 0, 3, 1, 4], 0, 1);
+```js
+without([1, 2, 1, 0, 3, 1, 4], 0, 1);
 => [2, 3, 4]
+```
 
 ## range (118 bytes)
 
@@ -154,8 +160,10 @@ var destination = extend(destination, *sources);
 
 Copy all of the properties in the source objects over to the destination object, and return the destination object. It's in-order, so the last source will override properties of the same name in previous arguments.
 
-_.extend({name: 'moe'}, {age: 50});
+```js
+extend({name: 'moe'}, {age: 50});
 => {name: 'moe', age: 50}
+```
 
 ## times (77 bytes)
 
