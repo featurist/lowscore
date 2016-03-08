@@ -1,4 +1,4 @@
-# Lowscore
+# Lowscore [![npm version](https://img.shields.io/npm/v/lowscore.svg)](https://www.npmjs.com/package/lowscore) [![npm](https://img.shields.io/npm/dm/lowscore.svg)](https://www.npmjs.com/package/lowscore)
 
 A very lightweight underscore, for browser apps that like to watch their weight.
 
