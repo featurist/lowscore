@@ -18,6 +18,18 @@ var indexBy = require('lowscore/indexBy');
 ...
 ```
 
+## find (87 bytes)
+
+```js
+var find = require('lowscore/find');
+var found = find(list, predicate);
+```
+
+Looks through each value in the list, returning the first one that passes a truth test (predicate), or undefined if no value passes the test. The function returns as soon as it finds an acceptable element, and doesn't traverse the entire list.
+
+var even = _.find([1, 2, 3, 4, 5, 6], function(num){ return num % 2 == 0; });
+=> 2
+
 ## sortBy (323 bytes)
 
 ```js
@@ -68,6 +80,23 @@ indexBy(stooges, 'age');
   "50": {name: 'larry', age: 50},
   "60": {name: 'curly', age: 60}
 }
+```
+
+## flatten (161 bytes)
+
+```js
+var flatten = require('lowscore/flatten');
+var r = flatten(array, [shallow]);
+```
+
+Flattens a nested array (the nesting can be to any depth). If you pass shallow, the array will only be flattened a single level.
+
+```js
+_.flatten([1, [2], [3, [[4]]]]);
+=> [1, 2, 3, 4];
+
+_.flatten([1, [2], [3, [[4]]]], true);
+=> [1, 2, 3, [[4]]];
 ```
 
 ## range (118 bytes)
