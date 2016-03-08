@@ -1,0 +1,28 @@
+{
+  "name": "lowscore",
+  "version": "1.0.0",
+  "description": "a very small underscore, for browser apps that like to watch their weight",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/featurist/lowscore.git"
+  },
+  "keywords": [
+    "underscore",
+    "util"
+  ],
+  "author": "Tim Macfarlane <timmacfarlane@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/featurist/lowscore/issues"
+  },
+  "homepage": "https://github.com/featurist/lowscore#readme",
+  "devDependencies": {
+    "fs-promise": "0.5.0",
+    "mustache": "2.2.1",
+    "uglify-js": "2.6.2"
+  }
+}
