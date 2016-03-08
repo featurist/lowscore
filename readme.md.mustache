@@ -99,6 +99,30 @@ _.flatten([1, [2], [3, [[4]]]], true);
 => [1, 2, 3, [[4]]];
 ```
 
+## compact ({{compact}})
+
+```js
+var compact = require('lowscore/compact');
+var a = compact(array);
+```
+
+Returns a copy of the array with all falsy values removed. In JavaScript, false, null, 0, "", undefined and NaN are all falsy.
+
+_.compact([0, 1, false, 2, '', 3]);
+=> [1, 2, 3]
+
+## without ({{without}})
+
+```js
+var without = require('lowscore/without');
+var a = without(array, *values);
+```
+
+Returns a copy of the array with all instances of the values removed.
+
+_.without([1, 2, 1, 0, 3, 1, 4], 0, 1);
+=> [2, 3, 4]
+
 ## range ({{range}})
 
 ```js
@@ -120,6 +144,18 @@ range(0, -10, -1);
 range(0);
 => []
 ```
+
+## extend ({{extend}})
+
+```js
+var extend = require('lowscore/extend');
+var destination = extend(destination, *sources);
+```
+
+Copy all of the properties in the source objects over to the destination object, and return the destination object. It's in-order, so the last source will override properties of the same name in previous arguments.
+
+_.extend({name: 'moe'}, {age: 50});
+=> {name: 'moe', age: 50}
 
 ## times ({{times}})
 
