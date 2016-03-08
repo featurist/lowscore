@@ -2,7 +2,21 @@
 
 A very lightweight underscore, for browser apps that like to watch their weight.
 
+Note, this is a very incomplete implementation of underscore, partly because many of underscore's functions can be found on `Array` and `Object` now, and also partly because I'm lazy. Pull requests for missing functions will be accepted gladly.
+
 # API
+
+You can either import all of lowscore, or just the parts you need.
+
+```js
+var _ = require('lowscore');
+_.groupBy(...);
+_.indexBy(...);
+
+var groupBy = require('lowscore/groupBy');
+var indexBy = require('lowscore/indexBy');
+...
+```
 
 ## groupBy ({{groupBy}})
 

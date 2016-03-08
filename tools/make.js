@@ -4,7 +4,7 @@ var pathUtils = require('path');
 var mustache = require('mustache');
 
 fs.readdir('.').then(list => {
-  var jsfilenames = list.filter(item => item.match(/\.js$/));
+  var jsfilenames = list.filter(item => item.match(/\.js$/) && !item.match(/index\.js$/));
   return Promise.all(jsfilenames.map(filename => {
     return fs.readFile(filename, 'utf-8').then(js => {
       return {
@@ -28,5 +28,10 @@ fs.readdir('.').then(list => {
   return fs.readFile('readme.md.mustache', 'utf-8').then(template => {
     var readme = mustache.render(template, sizes);
     return fs.writeFile('readme.md', readme);
+  }).then(() => {
+    var index = Object.keys(sizes).map(module => {
+      return `exports.${module} = require('./${module}.js');`;
+    }).join('\n') + '\n';
+    return fs.writeFile('index.js', index);
   });
 });
