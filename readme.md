@@ -190,5 +190,7 @@ var t = values(n, iteratee);
 
 Return all of the values of the object's own properties.
 
-_.values({one: 1, two: 2, three: 3});
+```js
+values({one: 1, two: 2, three: 3});
 => [1, 2, 3]
+```
