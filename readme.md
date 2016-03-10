@@ -194,3 +194,17 @@ Return all of the values of the object's own properties.
 values({one: 1, two: 2, three: 3});
 => [1, 2, 3]
 ```
+
+## uniq (139 bytes)
+
+```js
+var uniq = require('lowscore/uniq');
+var t = uniq(array);
+```
+
+Remove duplicate entries from the array.
+
+```js
+uniq([1, 2, 2, 3, 1, 2]);
+=> [1, 2, 3]
+```
