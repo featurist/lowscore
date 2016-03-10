@@ -195,7 +195,7 @@ values({one: 1, two: 2, three: 3});
 => [1, 2, 3]
 ```
 
-## uniq (139 bytes)
+## uniq (115 bytes)
 
 ```js
 var uniq = require('lowscore/uniq');

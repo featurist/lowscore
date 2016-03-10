@@ -1,10 +1,15 @@
 var uniq = require('../uniq');
 var expect = require('chai').expect;
+var times = require('../times');
 
 describe('uniq', function () {
   it('removes duplicate entries', function () {
-    var array = [1, 2, 3, 2, 3];
+    var a = { name: 'a' };
+    var b = { name: 'b' };
+    var c = { name: 'c' };
 
-    expect(uniq(array)).to.eql([1, 2, 3]);
+    var array = [a, b, c, b, a];
+
+    expect(uniq(array)).to.eql([a, b, c]);
   });
 });
