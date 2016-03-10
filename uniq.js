@@ -1,9 +1,9 @@
 module.exports = function(array) {
   var results = [];
 
-  for(var n = array.length - 1; n >= 0; n--) {
+  for(var n = 0; n < array.length; ++n) {
     var item = array[n];
-    if (array.lastIndexOf(item) == n) {
+    if (array.indexOf(item) == n) {
       results.push(item);
     }
   }
