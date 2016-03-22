@@ -10,3 +10,4 @@ exports.times = require('./times.js');
 exports.uniq = require('./uniq.js');
 exports.values = require('./values.js');
 exports.without = require('./without.js');
+exports.zip = require('./zip.js');

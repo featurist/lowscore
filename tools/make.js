@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var uglify = require('uglify-js');
 var fs = require('fs-promise');
 var pathUtils = require('path');
