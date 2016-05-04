@@ -153,7 +153,7 @@ range(0);
 => []
 ```
 
-## extend (139 bytes)
+## extend (142 bytes)
 
 ```js
 var extend = require('lowscore/extend');
