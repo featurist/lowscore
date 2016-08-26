@@ -1,6 +1,7 @@
 exports.compact = require('./compact.js');
 exports.extend = require('./extend.js');
 exports.find = require('./find.js');
+exports.findIndex = require('./findIndex.js');
 exports.flatten = require('./flatten.js');
 exports.groupBy = require('./groupBy.js');
 exports.indexBy = require('./indexBy.js');

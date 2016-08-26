@@ -32,6 +32,22 @@ var even = find([1, 2, 3, 4, 5, 6], function(num){ return num % 2 == 0; });
 => 2
 ```
 
+## findIndex ({{findIndex}})
+
+```js
+var findIndex = require('lowscore/findIndex');
+var foundIndex = findIndex(list, predicate);
+```
+
+Returns the first index where the predicate truth test passes; otherwise returns -1.
+
+```js
+_.findIndex([4, 6, 8, 12], isPrime);
+=> -1 // not found
+_.findIndex([4, 6, 7, 12], isPrime);
+=> 2
+```
+
 ## sortBy ({{sortBy}})
 
 ```js
