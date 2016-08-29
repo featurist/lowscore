@@ -5,6 +5,7 @@ exports.findIndex = require('./findIndex.js');
 exports.flatten = require('./flatten.js');
 exports.groupBy = require('./groupBy.js');
 exports.indexBy = require('./indexBy.js');
+exports.mapObject = require('./mapObject.js');
 exports.pick = require('./pick.js');
 exports.range = require('./range.js');
 exports.sortBy = require('./sortBy.js');
