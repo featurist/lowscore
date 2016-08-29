@@ -42,9 +42,9 @@ var foundIndex = findIndex(list, predicate);
 Returns the first index where the predicate truth test passes; otherwise returns -1.
 
 ```js
-_.findIndex([4, 6, 8, 12], isPrime);
+findIndex([4, 6, 8, 12], isPrime);
 => -1 // not found
-_.findIndex([4, 6, 7, 12], isPrime);
+findIndex([4, 6, 7, 12], isPrime);
 => 2
 ```
 
@@ -100,6 +100,24 @@ indexBy(stooges, 'age');
   "50": {name: 'larry', age: 50},
   "60": {name: 'curly', age: 60}
 }
+```
+
+## pick ({{pick}})
+
+```js
+var pick = require('lowscore/pick');
+pick(object, *keys);
+```
+
+Return a copy of the object, filtered to only have values for the whitelisted keys (or array of valid keys). Alternatively accepts a predicate indicating which keys to pick.
+
+```js
+pick({name: 'moe', age: 50, userid: 'moe1'}, 'name', 'age');
+=> {name: 'moe', age: 50}
+pick({name: 'moe', age: 50, userid: 'moe1'}, function(value, key, object) {
+  return isNumber(value);
+});
+=> {age: 50}
 ```
 
 ## flatten ({{flatten}})

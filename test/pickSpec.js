@@ -24,14 +24,23 @@ describe('pick', function () {
 
   it('returns new object with only fields passing a predicate', function () {
     var a = {
-      a: 'a',
-      b: 'b',
-      c: 'c'
+      a: 1,
+      b: 2,
+      c: 3
     };
 
-    expect(pick(a, function (f) {
-      return f == 'a' || f == 'b';
-    })).to.eql({a: 'a', b: 'b'});
+    var args = [];
+
+    expect(pick(a, function (value, key) {
+      args.push(Array.prototype.slice.call(arguments));
+      return key == 'a' || key == 'b';
+    })).to.eql({a: 1, b: 2});
+
+    expect(args).to.eql([
+      [1, 'a', a],
+      [2, 'b', a],
+      [3, 'c', a]
+    ]);
   });
 
   it("doesn't return fields that don't exist", function () {

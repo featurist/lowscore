@@ -2,7 +2,9 @@ module.exports = function(object) {
   var predicate = arguments[1];
   var fields =
     typeof predicate === 'function'
-      ? Object.keys(object).filter(predicate)
+      ? Object.keys(object).filter(function (key) {
+        return predicate(object[key], key, object);
+      })
       : predicate instanceof Array
         ? predicate
         : Array.prototype.slice.call(arguments, 1);
