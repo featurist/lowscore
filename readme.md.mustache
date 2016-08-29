@@ -120,6 +120,22 @@ pick({name: 'moe', age: 50, userid: 'moe1'}, function(value, key, object) {
 => {age: 50}
 ```
 
+## mapObject ({{mapObject}})
+
+```js
+var mapObject = require('lowscore/mapObject');
+mapObject(object, iteratee);
+```
+
+Like map, but for objects. Transform the value of each property in turn.
+
+```js
+mapObject({start: 5, end: 12}, function(val, key, object) {
+  return val + 5;
+});
+=> {start: 10, end: 17}
+```
+
 ## flatten ({{flatten}})
 
 ```js
