@@ -203,6 +203,13 @@ range(0);
 => []
 ```
 
+## repeat (115 bytes)
+
+```js
+repeat(3, 'stuff')
+=> ['stuff', 'stuff', 'stuff']
+```
+
 ## extend (142 bytes)
 
 ```js
