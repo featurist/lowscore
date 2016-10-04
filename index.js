@@ -9,6 +9,7 @@ exports.mapObject = require('./mapObject.js');
 exports.omit = require('./omit.js');
 exports.pick = require('./pick.js');
 exports.range = require('./range.js');
+exports.repeat = require('./repeat.js');
 exports.sortBy = require('./sortBy.js');
 exports.times = require('./times.js');
 exports.uniq = require('./uniq.js');
