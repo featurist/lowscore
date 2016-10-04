@@ -4,8 +4,9 @@
   "description": "a very small underscore, for browser apps that like to watch their weight",
   "main": "index.js",
   "scripts": {
-    "version": "node tools/make.js && git add index.js readme.md",
-    "test": "mocha"
+    "version": "npm run build-readme && git add index.js readme.md",
+    "test": "mocha",
+    "build-readme": "node tools/make.js"
   },
   "repository": {
     "type": "git",
