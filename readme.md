@@ -203,7 +203,7 @@ without([1, 2, 1, 0, 3, 1, 4], 0, 1);
 => [2, 3, 4]
 ```
 
-## range (118 bytes)
+## range (117 bytes)
 
 ```js
 var range = require('lowscore/range');
