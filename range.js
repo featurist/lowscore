@@ -10,7 +10,7 @@ module.exports = function(from, to, step) {
 
   var results = [];
 
-  for (var n = from; n != to; n += step) {
+  for (var n = from; n < to; n += step) {
     results.push(n);
   }
 
