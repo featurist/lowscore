@@ -20,6 +20,13 @@ var indexBy = require('lowscore/indexBy');
 
 ## find (87 bytes)
 
+| Module | Size (minified) |
+| --- | ---: |
+| `lowscore/find` | 87 |
+| `lodash.find` | 12681 |
+| `lodash/fp/find` | 61376 |
+| `underscore` (all) | 16133 |
+
 ```js
 var find = require('lowscore/find');
 var found = find(list, predicate);
@@ -33,6 +40,13 @@ var even = find([1, 2, 3, 4, 5, 6], function(num){ return num % 2 == 0; });
 ```
 
 ## findIndex (95 bytes)
+
+| Module | Size (minified) |
+| --- | ---: |
+| `lowscore/findIndex` | 95 |
+| `lodash.findindex` | 12509 |
+| `lodash/fp/findIndex` | 60952 |
+| `underscore` (all) | 16133 |
 
 ```js
 var findIndex = require('lowscore/findIndex');
@@ -49,6 +63,13 @@ findIndex([4, 6, 7, 12], isPrime);
 ```
 
 ## sortBy (323 bytes)
+
+| Module | Size (minified) |
+| --- | ---: |
+| `lowscore/sortBy` | 323 |
+| `lodash.sortby` | 13990 |
+| `lodash/fp/sortBy` | 63749 |
+| `underscore` (all) | 16133 |
 
 ```js
 var sortBy = require('lowscore/sortBy');
@@ -68,6 +89,13 @@ sortBy(stooges, 'name');
 
 ## groupBy (165 bytes)
 
+| Module | Size (minified) |
+| --- | ---: |
+| `lowscore/groupBy` | 165 |
+| `lodash.groupby` | 12392 |
+| `lodash/fp/groupBy` | 62274 |
+| `underscore` (all) | 16133 |
+
 ```js
 var groupBy = require('lowscore/groupBy');
 var groups = groupBy(list, iteratee);
@@ -84,6 +112,13 @@ groupBy(['one', 'two', 'three'], 'length');
 ```
 
 ## indexBy (144 bytes)
+
+| Module | Size (minified) |
+| --- | ---: |
+| `lowscore/indexBy` | 144 |
+| `lodash.indexby` | 10307 |
+| `lodash/fp/indexBy` | 62265 |
+| `underscore` (all) | 16133 |
 
 ```js
 var indexBy = require('lowscore/indexBy');
@@ -103,6 +138,13 @@ indexBy(stooges, 'age');
 ```
 
 ## pick (272 bytes)
+
+| Module | Size (minified) |
+| --- | ---: |
+| `lowscore/pick` | 272 |
+| `lodash.pick` | 2037 |
+| `lodash/fp/pick` | 61663 |
+| `underscore` (all) | 16133 |
 
 ```js
 var pick = require('lowscore/pick');
@@ -124,6 +166,13 @@ pick({name: 'moe', age: 50, userid: 'moe1'}, function(value, key, object) {
 
 ## omit (317 bytes)
 
+| Module | Size (minified) |
+| --- | ---: |
+| `lowscore/omit` | 317 |
+| `lodash.omit` | 6765 |
+| `lodash/fp/omit` | 62467 |
+| `underscore` (all) | 16133 |
+
 ```js
 var omit = require('lowscore/omit');
 omit(object, key1, key2, ...);
@@ -144,6 +193,13 @@ omit({name: 'moe', age: 50, userid: 'moe1'}, function(value, key, object) {
 
 ## mapObject (121 bytes)
 
+| Module | Size (minified) |
+| --- | ---: |
+| `lowscore/mapObject` | 121 |
+| `lodash.mapvalues` | 11991 |
+| `lodash/fp/mapValues` | 61328 |
+| `underscore` (all) | 16133 |
+
 ```js
 var mapObject = require('lowscore/mapObject');
 mapObject(object, iteratee);
@@ -159,6 +215,13 @@ mapObject({start: 5, end: 12}, function(val, key, object) {
 ```
 
 ## object (158 bytes)
+
+| Module | Size (minified) |
+| --- | ---: |
+| `lowscore/object` | 158 |
+| `lodash.frompairs` | 75 |
+| `lodash/fp/fromPairs` | 60787 |
+| `underscore` (all) | 16133 |
 
 ```js
 var object = require('lowscore/object');
@@ -177,6 +240,13 @@ _.object([['moe', 30], ['larry', 40], ['curly', 50]]);
 
 ## flatten (161 bytes)
 
+| Module | Size (minified) |
+| --- | ---: |
+| `lowscore/flatten` | 161 |
+| `lodash.flatten` | 1203 |
+| `lodash/fp/flatten` | 60775 |
+| `underscore` (all) | 16133 |
+
 ```js
 var flatten = require('lowscore/flatten');
 var r = flatten(array, [shallow]);
@@ -194,6 +264,13 @@ flatten([1, [2], [3, [[4]]]], true);
 
 ## compact (67 bytes)
 
+| Module | Size (minified) |
+| --- | ---: |
+| `lowscore/compact` | 67 |
+| `lodash.compact` | 78 |
+| `lodash/fp/compact` | 60912 |
+| `underscore` (all) | 16133 |
+
 ```js
 var compact = require('lowscore/compact');
 var a = compact(array);
@@ -208,6 +285,13 @@ compact([0, 1, false, 2, '', 3]);
 
 ## without (135 bytes)
 
+| Module | Size (minified) |
+| --- | ---: |
+| `lowscore/without` | 135 |
+| `lodash.without` | 4888 |
+| `lodash/fp/without` | 61951 |
+| `underscore` (all) | 16133 |
+
 ```js
 var without = require('lowscore/without');
 var a = without(array, *values);
@@ -221,6 +305,13 @@ without([1, 2, 1, 0, 3, 1, 4], 0, 1);
 ```
 
 ## range (117 bytes)
+
+| Module | Size (minified) |
+| --- | ---: |
+| `lowscore/range` | 117 |
+| `lodash.range` | 1505 |
+| `lodash/fp/range` | 61527 |
+| `underscore` (all) | 16133 |
 
 ```js
 var range = require('lowscore/range');
@@ -251,6 +342,13 @@ repeat(3, 'stuff')
 
 ## extend (142 bytes)
 
+| Module | Size (minified) |
+| --- | ---: |
+| `lowscore/extend` | 142 |
+| `lodash.assign` | 2378 |
+| `lodash/fp/assign` | 61936 |
+| `underscore` (all) | 16133 |
+
 ```js
 var extend = require('lowscore/extend');
 var destination = extend(destination, *sources);
@@ -264,6 +362,13 @@ extend({name: 'moe'}, {age: 50});
 ```
 
 ## times (77 bytes)
+
+| Module | Size (minified) |
+| --- | ---: |
+| `lowscore/times` | 77 |
+| `lodash.times` | 1013 |
+| `lodash/fp/times` | 61076 |
+| `underscore` (all) | 16133 |
 
 ```js
 var times = require('lowscore/times');
@@ -279,6 +384,13 @@ times(3, function(n){ return "item: " + n; });
 
 ## values (80 bytes)
 
+| Module | Size (minified) |
+| --- | ---: |
+| `lowscore/values` | 80 |
+| `lodash.values` | 1391 |
+| `lodash/fp/values` | 61053 |
+| `underscore` (all) | 16133 |
+
 ```js
 var values = require('lowscore/values');
 var t = values(n, iteratee);
@@ -293,6 +405,13 @@ values({one: 1, two: 2, three: 3});
 
 ## uniq (108 bytes)
 
+| Module | Size (minified) |
+| --- | ---: |
+| `lowscore/uniq` | 108 |
+| `lodash.uniq` | 4357 |
+| `lodash/fp/uniq` | 61855 |
+| `underscore` (all) | 16133 |
+
 ```js
 var uniq = require('lowscore/uniq');
 var t = uniq(array);
@@ -306,6 +425,13 @@ uniq([1, 2, 2, 3, 1, 2]);
 ```
 
 ## zip (230 bytes)
+
+| Module | Size (minified) |
+| --- | ---: |
+| `lowscore/zip` | 230 |
+| `lodash.zip` | 1272 |
+| `lodash/fp/zip` | 61514 |
+| `underscore` (all) | 16133 |
 
 ```js
 var zip = require('lowscore/zip');
