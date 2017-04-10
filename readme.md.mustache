@@ -18,7 +18,13 @@ var indexBy = require('lowscore/indexBy');
 ...
 ```
 
-## find ({{find}})
+## find ({{sizes.find}})
+
+{{#comparison}}{
+  "lowscore": "find",
+  "lodash": "lodash/fp/find",
+  "lodashModule": "lodash.find"
+}{{/comparison}}
 
 ```js
 var find = require('lowscore/find');
@@ -32,7 +38,13 @@ var even = find([1, 2, 3, 4, 5, 6], function(num){ return num % 2 == 0; });
 => 2
 ```
 
-## findIndex ({{findIndex}})
+## findIndex ({{sizes.findIndex}})
+
+{{#comparison}}{
+  "lowscore": "findIndex",
+  "lodash": "lodash/fp/findIndex",
+  "lodashModule": "lodash.findindex"
+}{{/comparison}}
 
 ```js
 var findIndex = require('lowscore/findIndex');
@@ -48,7 +60,13 @@ findIndex([4, 6, 7, 12], isPrime);
 => 2
 ```
 
-## sortBy ({{sortBy}})
+## sortBy ({{sizes.sortBy}})
+
+{{#comparison}}{
+  "lowscore": "sortBy",
+  "lodash": "lodash/fp/sortBy",
+  "lodashModule": "lodash.sortby"
+}{{/comparison}}
 
 ```js
 var sortBy = require('lowscore/sortBy');
@@ -66,7 +84,13 @@ sortBy(stooges, 'name');
 => [{name: 'curly', age: 60}, {name: 'larry', age: 50}, {name: 'moe', age: 40}];
 ```
 
-## groupBy ({{groupBy}})
+## groupBy ({{sizes.groupBy}})
+
+{{#comparison}}{
+  "lowscore": "groupBy",
+  "lodash": "lodash/fp/groupBy",
+  "lodashModule": "lodash.groupby"
+}{{/comparison}}
 
 ```js
 var groupBy = require('lowscore/groupBy');
@@ -83,7 +107,13 @@ groupBy(['one', 'two', 'three'], 'length');
 => {3: ["one", "two"], 5: ["three"]}
 ```
 
-## indexBy ({{indexBy}})
+## indexBy ({{sizes.indexBy}})
+
+{{#comparison}}{
+  "lowscore": "indexBy",
+  "lodash": "lodash/fp/indexBy",
+  "lodashModule": "lodash.indexby"
+}{{/comparison}}
 
 ```js
 var indexBy = require('lowscore/indexBy');
@@ -102,7 +132,13 @@ indexBy(stooges, 'age');
 }
 ```
 
-## pick ({{pick}})
+## pick ({{sizes.pick}})
+
+{{#comparison}}{
+  "lowscore": "pick",
+  "lodash": "lodash/fp/pick",
+  "lodashModule": "lodash.pick"
+}{{/comparison}}
 
 ```js
 var pick = require('lowscore/pick');
@@ -122,7 +158,13 @@ pick({name: 'moe', age: 50, userid: 'moe1'}, function(value, key, object) {
 => {age: 50}
 ```
 
-## omit ({{omit}})
+## omit ({{sizes.omit}})
+
+{{#comparison}}{
+  "lowscore": "omit",
+  "lodash": "lodash/fp/omit",
+  "lodashModule": "lodash.omit"
+}{{/comparison}}
 
 ```js
 var omit = require('lowscore/omit');
@@ -142,7 +184,13 @@ omit({name: 'moe', age: 50, userid: 'moe1'}, function(value, key, object) {
 => {name: 'moe', userid: 'moe1'}
 ```
 
-## mapObject ({{mapObject}})
+## mapObject ({{sizes.mapObject}})
+
+{{#comparison}}{
+  "lowscore": "mapObject",
+  "lodash": "lodash/fp/mapValues",
+  "lodashModule": "lodash.mapvalues"
+}{{/comparison}}
 
 ```js
 var mapObject = require('lowscore/mapObject');
@@ -158,7 +206,13 @@ mapObject({start: 5, end: 12}, function(val, key, object) {
 => {start: 10, end: 17}
 ```
 
-## object ({{object}})
+## object ({{sizes.object}})
+
+{{#comparison}}{
+  "lowscore": "object",
+  "lodash": "lodash/fp/fromPairs",
+  "lodashModule": "lodash.frompairs"
+}{{/comparison}}
 
 ```js
 var object = require('lowscore/object');
@@ -175,7 +229,13 @@ _.object([['moe', 30], ['larry', 40], ['curly', 50]]);
 => {moe: 30, larry: 40, curly: 50}
 ```
 
-## flatten ({{flatten}})
+## flatten ({{sizes.flatten}})
+
+{{#comparison}}{
+  "lowscore": "flatten",
+  "lodash": "lodash/fp/flatten",
+  "lodashModule": "lodash.flatten"
+}{{/comparison}}
 
 ```js
 var flatten = require('lowscore/flatten');
@@ -192,7 +252,13 @@ flatten([1, [2], [3, [[4]]]], true);
 => [1, 2, 3, [[4]]];
 ```
 
-## compact ({{compact}})
+## compact ({{sizes.compact}})
+
+{{#comparison}}{
+  "lowscore": "compact",
+  "lodash": "lodash/fp/compact",
+  "lodashModule": "lodash.compact"
+}{{/comparison}}
 
 ```js
 var compact = require('lowscore/compact');
@@ -206,7 +272,13 @@ compact([0, 1, false, 2, '', 3]);
 => [1, 2, 3]
 ```
 
-## without ({{without}})
+## without ({{sizes.without}})
+
+{{#comparison}}{
+  "lowscore": "without",
+  "lodash": "lodash/fp/without",
+  "lodashModule": "lodash.without"
+}{{/comparison}}
 
 ```js
 var without = require('lowscore/without');
@@ -220,7 +292,13 @@ without([1, 2, 1, 0, 3, 1, 4], 0, 1);
 => [2, 3, 4]
 ```
 
-## range ({{range}})
+## range ({{sizes.range}})
+
+{{#comparison}}{
+  "lowscore": "range",
+  "lodash": "lodash/fp/range",
+  "lodashModule": "lodash.range"
+}{{/comparison}}
 
 ```js
 var range = require('lowscore/range');
@@ -249,7 +327,13 @@ repeat(3, 'stuff')
 => ['stuff', 'stuff', 'stuff']
 ```
 
-## extend ({{extend}})
+## extend ({{sizes.extend}})
+
+{{#comparison}}{
+  "lowscore": "extend",
+  "lodash": "lodash/fp/assign",
+  "lodashModule": "lodash.assign"
+}{{/comparison}}
 
 ```js
 var extend = require('lowscore/extend');
@@ -263,7 +347,13 @@ extend({name: 'moe'}, {age: 50});
 => {name: 'moe', age: 50}
 ```
 
-## times ({{times}})
+## times ({{sizes.times}})
+
+{{#comparison}}{
+  "lowscore": "times",
+  "lodash": "lodash/fp/times",
+  "lodashModule": "lodash.times"
+}{{/comparison}}
 
 ```js
 var times = require('lowscore/times');
@@ -277,7 +367,13 @@ times(3, function(n){ return "item: " + n; });
 => ['item: 0', 'item: 1', 'item: 2']
 ```
 
-## values ({{values}})
+## values ({{sizes.values}})
+
+{{#comparison}}{
+  "lowscore": "values",
+  "lodash": "lodash/fp/values",
+  "lodashModule": "lodash.values"
+}{{/comparison}}
 
 ```js
 var values = require('lowscore/values');
@@ -291,7 +387,13 @@ values({one: 1, two: 2, three: 3});
 => [1, 2, 3]
 ```
 
-## uniq ({{uniq}})
+## uniq ({{sizes.uniq}})
+
+{{#comparison}}{
+  "lowscore": "uniq",
+  "lodash": "lodash/fp/uniq",
+  "lodashModule": "lodash.uniq"
+}{{/comparison}}
 
 ```js
 var uniq = require('lowscore/uniq');
@@ -305,7 +407,13 @@ uniq([1, 2, 2, 3, 1, 2]);
 => [1, 2, 3]
 ```
 
-## zip ({{zip}})
+## zip ({{sizes.zip}})
+
+{{#comparison}}{
+  "lowscore": "zip",
+  "lodash": "lodash/fp/zip",
+  "lodashModule": "lodash.zip"
+}{{/comparison}}
 
 ```js
 var zip = require('lowscore/zip');
