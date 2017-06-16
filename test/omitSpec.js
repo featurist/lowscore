@@ -1,7 +1,7 @@
-var omit = require('../omit');
 var expect = require('chai').expect;
+var describeLowscore = require('./describeLowscore')
 
-describe('omit', function () {
+describeLowscore('omit', function(omit) {
   it('returns new object without named fields', function () {
     var a = {
       a: 'a',

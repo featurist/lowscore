@@ -252,6 +252,48 @@ flatten([1, [2], [3, [[4]]]], true);
 => [1, 2, 3, [[4]]];
 ```
 
+## max ({{sizes.max}})
+
+{{#comparison}}{
+  "lowscore": "max",
+  "lodash": "lodash/fp/max",
+  "lodashModule": "lodash.max"
+}{{/comparison}}
+
+```js
+var max = require('lowscore/max');
+var smallestItem = max(items, iteratee);
+```
+
+Returns the maximum value in list. If an iteratee function is provided, it will be used on each value to generate the criterion by which the value is ranked. -Infinity is returned if list is empty, so an isEmpty guard may be required. Non-numerical values in list will be ignored.
+
+```js
+var stooges = [{name: 'moe', age: 40}, {name: 'larry', age: 50}, {name: 'curly', age: 60}];
+_.max(stooges, function(stooge){ return stooge.age; });
+=> {name: 'curly', age: 60};
+```
+
+## min ({{sizes.min}})
+
+{{#comparison}}{
+  "lowscore": "min",
+  "lodash": "lodash/fp/min",
+  "lodashModule": "lodash.min"
+}{{/comparison}}
+
+```js
+var min = require('lowscore/min');
+var smallestItem = min(items, iteratee);
+```
+
+Returns the minimum value in list. If an iteratee function is provided, it will be used on each value to generate the criterion by which the value is ranked. Infinity is returned if list is empty, so an isEmpty guard may be required. Non-numerical values in list will be ignored.
+
+```js
+var numbers = [10, 5, 100, 2, 1000];
+_.min(numbers);
+=> 2
+```
+
 ## compact ({{sizes.compact}})
 
 {{#comparison}}{

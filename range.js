@@ -8,6 +8,10 @@ module.exports = function(from, to, step) {
     step = 1;
   }
 
+  if (typeof from !== 'number' || typeof to !== 'number' || typeof step !== 'number') {
+    throw new RangeError('Invalid array length')
+  }
+
   var results = [];
 
   for (var n = from; n < to; n += step) {

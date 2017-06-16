@@ -1,7 +1,7 @@
-var object = require('../object');
 var expect = require('chai').expect;
+var describeLowscore = require('./describeLowscore')
 
-describe('object', function () {
+describeLowscore('object', function(object) {
   it('returns an object from an array of key/value pairs', function () {
     var a = [
       ['a', 1],

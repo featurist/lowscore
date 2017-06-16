@@ -1,7 +1,7 @@
-var sortBy = require('../sortBy');
 var expect = require('chai').expect;
+var describeLowscore = require('./describeLowscore')
 
-describe('sortBy', function () {
+describeLowscore('sortBy', function(sortBy) {
   it('sorts items by key string', function () {
     var array = [
       { name: 'b' },

@@ -1,7 +1,7 @@
-var without = require('../without');
 var expect = require('chai').expect;
+var describeLowscore = require('./describeLowscore')
 
-describe('without', function () {
+describeLowscore('without', function(without) {
   it('returns new array with arguments removed', function () {
     var array = [
       1, 2, 3, 4, 5

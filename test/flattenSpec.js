@@ -1,7 +1,7 @@
-var flatten = require('../flatten');
 var expect = require('chai').expect;
+var describeLowscore = require('./describeLowscore')
 
-describe('flatten', function () {
+describeLowscore('flatten', function(flatten) {
   it('finds the first item that passes the predicate', function () {
     var array = [
       [1, 2, 3],

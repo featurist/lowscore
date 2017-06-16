@@ -1,9 +1,7 @@
-var uniq = require('../uniq');
 var expect = require('chai').expect;
-var times = require('../times');
-var itBehaves = require('./itBehaves');
+var describeLowscore = require('./describeLowscore')
 
-describe('uniq', function () {
+describeLowscore('uniq', function(uniq) {
   it('removes duplicate entries', function () {
     var a = { name: 'a' };
     var b = { name: 'b' };
@@ -13,6 +11,4 @@ describe('uniq', function () {
 
     expect(uniq(array)).to.eql([a, b, c]);
   });
-  
-  itBehaves.likeUnderscoreFor('_.uniq([1,2,3,2,3])');
 });
