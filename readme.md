@@ -262,6 +262,50 @@ flatten([1, [2], [3, [[4]]]], true);
 => [1, 2, 3, [[4]]];
 ```
 
+## max (209 bytes)
+
+| Module | Size (minified) |
+| --- | ---: |
+| `lowscore/max` | 209 |
+| `lodash.max` | 373 |
+| `lodash/fp/max` | 61244 |
+| `underscore` (all) | 16133 |
+
+```js
+var max = require('lowscore/max');
+var smallestItem = max(items, iteratee);
+```
+
+Returns the maximum value in list. If an iteratee function is provided, it will be used on each value to generate the criterion by which the value is ranked. -Infinity is returned if list is empty, so an isEmpty guard may be required. Non-numerical values in list will be ignored.
+
+```js
+var stooges = [{name: 'moe', age: 40}, {name: 'larry', age: 50}, {name: 'curly', age: 60}];
+_.max(stooges, function(stooge){ return stooge.age; });
+=> {name: 'curly', age: 60};
+```
+
+## min (206 bytes)
+
+| Module | Size (minified) |
+| --- | ---: |
+| `lowscore/min` | 206 |
+| `lodash.min` | 373 |
+| `lodash/fp/min` | 61244 |
+| `underscore` (all) | 16133 |
+
+```js
+var min = require('lowscore/min');
+var smallestItem = min(items, iteratee);
+```
+
+Returns the minimum value in list. If an iteratee function is provided, it will be used on each value to generate the criterion by which the value is ranked. Infinity is returned if list is empty, so an isEmpty guard may be required. Non-numerical values in list will be ignored.
+
+```js
+var numbers = [10, 5, 100, 2, 1000];
+_.min(numbers);
+=> 2
+```
+
 ## compact (67 bytes)
 
 | Module | Size (minified) |
@@ -304,11 +348,11 @@ without([1, 2, 1, 0, 3, 1, 4], 0, 1);
 => [2, 3, 4]
 ```
 
-## range (117 bytes)
+## range (224 bytes)
 
 | Module | Size (minified) |
 | --- | ---: |
-| `lowscore/range` | 117 |
+| `lowscore/range` | 224 |
 | `lodash.range` | 1505 |
 | `lodash/fp/range` | 61527 |
 | `underscore` (all) | 16133 |

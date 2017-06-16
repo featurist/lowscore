@@ -37,6 +37,8 @@
     "lodash.groupby": "4.6.0",
     "lodash.indexby": "3.1.1",
     "lodash.mapvalues": "4.6.0",
+    "lodash.max": "4.0.1",
+    "lodash.min": "4.0.1",
     "lodash.omit": "4.5.0",
     "lodash.pick": "4.4.0",
     "lodash.range": "3.2.0",
