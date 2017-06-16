@@ -1,7 +1,7 @@
-var mapObject = require('../mapObject');
 var expect = require('chai').expect;
+var describeLowscore = require('./describeLowscore')
 
-describe('mapObject', function () {
+describeLowscore('mapObject', function(mapObject) {
   it('returns new object mapped by function', function () {
     var a = {
       a: 1,

@@ -1,8 +1,7 @@
-var zip = require('../zip');
 var expect = require('chai').expect;
-var itBehaves = require('./itBehaves');
+var describeLowscore = require('./describeLowscore')
 
-describe('zip', function () {
+describeLowscore('zip', function(zip) {
   it('zips three arrays together', function () {
     var result = zip([1, 2, 3], ['one', 'two', 'three'], ['a', 'b', 'c']);
 
@@ -22,7 +21,4 @@ describe('zip', function () {
       [undefined, undefined, 'c']
     ]);
   });
-
-  itBehaves.likeUnderscoreFor("_.zip(['moe', 'larry', 'curly'], [30, 40, 50], [true, false, false])");
-  itBehaves.likeUnderscoreFor("_.zip(['moe', 'larry', 'curly'], [30, 40, 50], [true, false, false])");
 });

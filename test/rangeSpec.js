@@ -1,7 +1,7 @@
-var range = require('../range');
 var expect = require('chai').expect;
+var describeLowscore = require('./describeLowscore')
 
-describe('range', function () {
+describeLowscore('range', function(range) {
   it('produces a range from 0 up to 3', function () {
     expect(range(3)).to.eql([0, 1, 2]);
   });
@@ -15,7 +15,7 @@ describe('range', function () {
   });
 
   it("doesn't crash when given silly numbers", function () {
-    expect(range(3, 'ten'));
-    expect(range(3, 10, 'ten'));
+    expect(function () { range(3, 'ten') }).to.throw('Invalid array length');
+    expect(function () { range(3, 10, 'ten')}).to.throw('Invalid array length');
   });
 });

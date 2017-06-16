@@ -1,7 +1,7 @@
-var extend = require('../extend');
 var expect = require('chai').expect;
+var describeLowscore = require('./describeLowscore')
 
-describe('extend', function () {
+describeLowscore('extend', function(extend) {
   it('adds properties of several objects to the first object', function () {
     var object = {
       a: 'a',

@@ -1,7 +1,7 @@
-var find = require('../find');
 var expect = require('chai').expect;
+var describeLowscore = require('./describeLowscore')
 
-describe('find', function () {
+describeLowscore('find', function(find) {
   it('finds the first item that passes the predicate', function () {
     var array = [
       { name: 'b' },

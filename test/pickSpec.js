@@ -1,7 +1,7 @@
-var pick = require('../pick');
 var expect = require('chai').expect;
+var describeLowscore = require('./describeLowscore')
 
-describe('pick', function () {
+describeLowscore('pick', function(pick) {
   it('returns new object with only named fields', function () {
     var a = {
       a: 'a',
