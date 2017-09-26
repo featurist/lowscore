@@ -29,4 +29,12 @@ describeLowscore('sortBy', function(sortBy) {
       { name: 'c' }
     ]);
   });
+
+  it('sorts items', function () {
+    var array = [1, 4, 3, 2, 6, 7, 9, 5];
+
+    expect(sortBy(array)).to.eql([
+      1, 2, 3, 4, 5, 6, 7, 9
+    ]);
+  });
 });

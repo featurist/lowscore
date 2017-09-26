@@ -62,11 +62,11 @@ findIndex([4, 6, 7, 12], isPrime);
 => 2
 ```
 
-## sortBy (323 bytes)
+## sortBy (327 bytes)
 
 | Module | Size (minified) |
 | --- | ---: |
-| `lowscore/sortBy` | 323 |
+| `lowscore/sortBy` | 327 |
 | `lodash.sortby` | 13990 |
 | `lodash/fp/sortBy` | 63749 |
 | `underscore` (all) | 16133 |

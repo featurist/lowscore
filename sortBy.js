@@ -8,7 +8,7 @@ module.exports = function(list, iteratee) {
     return {
       value: value,
       index: index,
-      criteria: iteratee? iteratee(value, index, list): value[fieldName]
+      criteria: iteratee? iteratee(value, index, list): fieldName ? value[fieldName] : value
     };
   }).sort(function(left, right) {
     var a = left.criteria;
