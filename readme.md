@@ -39,11 +39,11 @@ var even = find([1, 2, 3, 4, 5, 6], function(num){ return num % 2 == 0; });
 => 2
 ```
 
-## findIndex (95 bytes)
+## findIndex (97 bytes)
 
 | Module | Size (minified) |
 | --- | ---: |
-| `lowscore/findIndex` | 95 |
+| `lowscore/findIndex` | 97 |
 | `lodash.findindex` | 12509 |
 | `lodash/fp/findIndex` | 60952 |
 | `underscore` (all) | 16133 |
@@ -53,7 +53,7 @@ var findIndex = require('lowscore/findIndex');
 var foundIndex = findIndex(list, predicate);
 ```
 
-Returns the first index where the predicate truth test passes; otherwise returns -1.
+Returns the first index where the predicate truth test passes; otherwise returns -1. Predicate is passed the item and item index.
 
 ```js
 findIndex([4, 6, 8, 12], isPrime);

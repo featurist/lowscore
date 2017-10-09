@@ -51,7 +51,7 @@ var findIndex = require('lowscore/findIndex');
 var foundIndex = findIndex(list, predicate);
 ```
 
-Returns the first index where the predicate truth test passes; otherwise returns -1.
+Returns the first index where the predicate truth test passes; otherwise returns -1. Predicate is passed the item and item index.
 
 ```js
 findIndex([4, 6, 8, 12], isPrime);

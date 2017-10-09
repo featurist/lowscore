@@ -29,4 +29,18 @@ describeLowscore('findIndex', function(findIndex) {
 
     expect(found).to.equal(-1);
   });
+
+  it('passes index to predicate', function () {
+    var array = [
+      { name: 'b' },
+      { name: 'a' },
+      { name: 'c' }
+    ];
+
+    var found = findIndex(array, function (item, index) {
+      return index === 1
+    });
+
+    expect(found).to.equal(1);
+  });
 });
