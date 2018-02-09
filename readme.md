@@ -488,3 +488,6 @@ Merges together the values of each of the arrays with the values at the correspo
 zip(['moe', 'larry', 'curly'], [30, 40, 50], [true, false, false]);
 => [["moe", 30, true], ["larry", 40, false], ["curly", 50, false]]
 ```
+
+## We're Hiring!
+Featurist provides full stack, feature driven development teams. Want to join us? Check out [our career opportunities](https://www.featurist.co.uk/careers/).
