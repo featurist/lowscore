@@ -490,4 +490,5 @@ zip(['moe', 'larry', 'curly'], [30, 40, 50], [true, false, false]);
 ```
 
 ## We're Hiring!
-Featurist provides full stack, feature driven development teams. Want to join us? Check out [our career opportunities](https://www.featurist.co.uk/careers/).
+
+Join our remote team and help us build amazing software. Check out [our career opportunities](https://www.featurist.co.uk/careers/).
