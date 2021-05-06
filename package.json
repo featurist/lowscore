@@ -52,6 +52,6 @@
     "mustache": "2.2.1",
     "stream-to-string": "1.1.0",
     "uglify-js": "2.6.2",
-    "underscore": "1.8.3"
+    "underscore": "1.12.1"
   }
 }
